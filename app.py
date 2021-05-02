@@ -65,4 +65,4 @@ def scraper():
 
 # scheduler()
 scraper()
-time.sleep(300)
+time.sleep(120)
