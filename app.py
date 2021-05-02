@@ -64,5 +64,6 @@ def scraper():
 
 
 # scheduler()
-scraper()
-time.sleep(120)
+while True:
+    scraper()
+    time.sleep(120)
