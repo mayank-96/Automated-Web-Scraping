@@ -3,6 +3,7 @@ import pyrebase
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+import time
 
 # Set the configuration for your app
 # Todo : Replace with your project's config object
@@ -54,11 +55,14 @@ def scraper():
 
 
 # Define scheduler function
-def scheduler():
-    now = datetime.now()
-    current_time = now.strftime("%H:%M:%S")
+# def scheduler():
+#     now = datetime.now()
+#     current_time = now.strftime("%H:%M:%S")
     # Trigger scraper function everyday on 12 AM
-    if current_time == "13:00:00":   
-        scraper()
+    # if current_time == "13:00:00":   
+    #     scraper()
 
-scheduler()
+
+# scheduler()
+scraper()
+time.sleep(300)
