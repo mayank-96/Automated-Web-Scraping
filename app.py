@@ -59,8 +59,8 @@ def scheduler():
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
     #Trigger scraper function everyday on 12 AM
-    print(current_time)
-    if current_time == "15:20:00":   
+    # print(current_time)
+    if current_time == "15:25:00":   
         scraper()
 
 
