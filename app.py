@@ -54,13 +54,12 @@ def scraper():
         current_month).child(current_date).set(all_headlines)
 
 
-#Define scheduler function
+# Define scheduler function
 def scheduler():
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
-    #Trigger scraper function everyday on 12 AM
-    # print(current_time)
-    if current_time == "16:15:00":   
+    # Trigger scraper function at 12 AM
+    if current_time == "00:00:00":   
         scraper()
 
 while True:
